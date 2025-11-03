@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.kotlin.gitexplain.ui.theme.GitExplainTheme
+import com.kotlin.gitexplain.ScreenPrueba
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GitExplainTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    ScreenPrueba()
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
